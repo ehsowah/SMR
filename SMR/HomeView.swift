@@ -68,6 +68,16 @@ struct HomeView: View {
                 .cornerRadius(25)
         }
 
+        Button {
+            print("Detected Object")
+        } label: {
+            Text("Detected Object")
+                .foregroundColor(.white)
+                .frame(width: 150)
+                .padding()
+                .background(Color.orange)
+                .cornerRadius(25)
+        }
     }
     
     

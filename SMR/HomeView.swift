@@ -13,7 +13,7 @@ struct HomeView: View {
             
             ZStack {
                 RoundedRectangle(cornerRadius: 25, style: .continuous)
-                                .fill(.white)
+                    .fill(Color("robotBlue"))
                                 .shadow(color: .black, radius: 20, x: 0, y: 10)
                 
                 VStack {

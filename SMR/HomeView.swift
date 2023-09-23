@@ -8,6 +8,9 @@
 import SwiftUI
 
 struct HomeView: View {
+    
+    @ObservedObject var model = ViewModel()
+    @State private var count = 0
     var body: some View {
         VStack {
             
@@ -70,6 +73,8 @@ struct HomeView: View {
 
         Button {
             print("Detected Object")
+            count += 1
+            model.setData(count)
         } label: {
             Text("Detected Object")
                 .foregroundColor(.white)

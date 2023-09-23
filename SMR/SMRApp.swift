@@ -7,6 +7,7 @@
 
 import SwiftUI
 import OneSignalFramework
+import FirebaseCore
 
 @main
 struct SMRApp: App {
@@ -35,7 +36,7 @@ class AppDelegate: NSObject, UIApplicationDelegate {
 
       // Login your customer with externalId
       // OneSignal.login("EXTERNAL_ID")
-           
+        FirebaseApp.configure()
       
         return true
     }

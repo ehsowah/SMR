@@ -21,6 +21,7 @@
 		0B843DEF2ABBB444002CA641 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B843DEE2ABBB444002CA641 /* HomeView.swift */; };
 		0BD9F7832ABF348D0068F3A2 /* FirebaseDatabase in Frameworks */ = {isa = PBXBuildFile; productRef = 0BD9F7822ABF348D0068F3A2 /* FirebaseDatabase */; };
 		0BD9F7852ABF348D0068F3A2 /* FirebaseDatabaseSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 0BD9F7842ABF348D0068F3A2 /* FirebaseDatabaseSwift */; };
+		0BD9F7872ABF3D530068F3A2 /* CameraView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BD9F7862ABF3D530068F3A2 /* CameraView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,6 +36,7 @@
 		0B843DE52ABBA7D5002CA641 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		0B843DEC2ABBA8D7002CA641 /* GetStartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetStartView.swift; sourceTree = "<group>"; };
 		0B843DEE2ABBB444002CA641 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		0BD9F7862ABF3D530068F3A2 /* CameraView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +81,7 @@
 				0B843DE02ABBA7D4002CA641 /* ContentView.swift */,
 				0B843DEC2ABBA8D7002CA641 /* GetStartView.swift */,
 				0B843DEE2ABBB444002CA641 /* HomeView.swift */,
+				0BD9F7862ABF3D530068F3A2 /* CameraView.swift */,
 				0B10E4302ABE538B007DE28B /* ViewModel.swift */,
 				0B843DE22ABBA7D5002CA641 /* Assets.xcassets */,
 				0B10E42B2ABE4F17007DE28B /* GoogleService-Info.plist */,
@@ -181,6 +184,7 @@
 				0B10E4312ABE538B007DE28B /* ViewModel.swift in Sources */,
 				0B843DE12ABBA7D4002CA641 /* ContentView.swift in Sources */,
 				0B843DEF2ABBB444002CA641 /* HomeView.swift in Sources */,
+				0BD9F7872ABF3D530068F3A2 /* CameraView.swift in Sources */,
 				0B843DDF2ABBA7D4002CA641 /* SMRApp.swift in Sources */,
 				0B843DED2ABBA8D7002CA641 /* GetStartView.swift in Sources */,
 			);

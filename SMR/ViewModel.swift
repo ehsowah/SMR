@@ -14,12 +14,12 @@ class ViewModel: ObservableObject {
     var ref = Database.database().reference()
     
     func getData() {
-        ref.child("KeyA").observeSingleEvent(of: .value) { snapshot in
+        ref.child("Turn").observeSingleEvent(of: .value) { snapshot in
             self.value = snapshot.value as? String ?? "load failed"
         }
     }
     
-    func setData(_ count: Int) {
-        ref.child("KeyA").setValue(count)
+    func setData(_ turn: String) {
+        ref.child("Turn").setValue(turn)
     }
 }

@@ -31,6 +31,10 @@ struct ObjectListView: View {
                 }
             }
         }
+        .refreshable {
+            model.objectList.removeAll()
+            model.getDetectedObject()
+        }
         
     }
 }

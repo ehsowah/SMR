@@ -8,47 +8,30 @@
 import SwiftUI
 
 struct ObjectListView: View {
+    @ObservedObject var model = ViewModel()
+    
+    init() {
+        model.getDetectedObject()
+    }
+    
     var body: some View {
-        VStack(alignment: .leading) {
+        
+        List (model.objectList) { item in
             HStack(alignment: .top) {
-                Image("chair")
-                    .resizable()
-                    .scaledToFit()
-                    .frame(width: 100, height: 100)
-                    .cornerRadius(10)
+                ImageView(withURL: item.imageURL)
                 
                 VStack(alignment: .leading) {
-                    Text("Chair 100%")
+                    Text("\(item.name) \(item.confidence)%")
                         .bold()
-                    Text("09-12-2023")
+                    Text("\(item.date)")
                         .font(.subheadline)
-                    Text("Warning")
+                    Text(item.danger ? "Warning":"Not danger")
                         .font(.subheadline)
-                        .foregroundColor(.red)
-                }
-            }
-            
-            Divider()
-            
-            HStack(alignment: .top) {
-                Image("chair")
-                    .resizable()
-                    .scaledToFit()
-                    .frame(width: 100, height: 100)
-                    .cornerRadius(10)
-                
-                VStack(alignment: .leading) {
-                    Text("Chair 100%")
-                        .bold()
-                    Text("09-12-2023")
-                        .font(.subheadline)
-                    Text("Warning")
-                        .font(.subheadline)
-                        .foregroundColor(.red)
+                        .foregroundColor(item.danger ? .red : .green)
                 }
             }
         }
-        .padding()
+        
     }
 }
 

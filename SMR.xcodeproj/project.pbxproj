@@ -19,12 +19,16 @@
 		0B843DE62ABBA7D5002CA641 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0B843DE52ABBA7D5002CA641 /* Preview Assets.xcassets */; };
 		0B843DED2ABBA8D7002CA641 /* GetStartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B843DEC2ABBA8D7002CA641 /* GetStartView.swift */; };
 		0B843DEF2ABBB444002CA641 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B843DEE2ABBB444002CA641 /* HomeView.swift */; };
-		0BD9F7832ABF348D0068F3A2 /* FirebaseDatabase in Frameworks */ = {isa = PBXBuildFile; productRef = 0BD9F7822ABF348D0068F3A2 /* FirebaseDatabase */; };
-		0BD9F7852ABF348D0068F3A2 /* FirebaseDatabaseSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 0BD9F7842ABF348D0068F3A2 /* FirebaseDatabaseSwift */; };
 		0BD9F7872ABF3D530068F3A2 /* CameraView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BD9F7862ABF3D530068F3A2 /* CameraView.swift */; };
 		0BF55E792AC3145F000F3126 /* NotificationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BF55E782AC3145F000F3126 /* NotificationService.swift */; };
 		0BF55E7D2AC3145F000F3126 /* OneSignalNotificationServiceExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 0BF55E762AC3145F000F3126 /* OneSignalNotificationServiceExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		0BFBDDB72AC32656006E74FC /* ObjectListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BFBDDB62AC32656006E74FC /* ObjectListView.swift */; };
+		0BFBDDBA2AC32D75006E74FC /* FirebaseDatabase in Frameworks */ = {isa = PBXBuildFile; productRef = 0BFBDDB92AC32D75006E74FC /* FirebaseDatabase */; };
+		0BFBDDBC2AC32D75006E74FC /* FirebaseDatabaseSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 0BFBDDBB2AC32D75006E74FC /* FirebaseDatabaseSwift */; };
+		0BFBDDBE2AC32D75006E74FC /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 0BFBDDBD2AC32D75006E74FC /* FirebaseFirestore */; };
+		0BFBDDC02AC32E41006E74FC /* ObjectList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BFBDDBF2AC32E41006E74FC /* ObjectList.swift */; };
+		0BFBDDC22AC33576006E74FC /* ImageLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BFBDDC12AC33576006E74FC /* ImageLoader.swift */; };
+		0BFBDDC42AC3380C006E74FC /* ImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BFBDDC32AC3380C006E74FC /* ImageView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -68,6 +72,9 @@
 		0BF55E782AC3145F000F3126 /* NotificationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationService.swift; sourceTree = "<group>"; };
 		0BF55E7A2AC3145F000F3126 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0BFBDDB62AC32656006E74FC /* ObjectListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObjectListView.swift; sourceTree = "<group>"; };
+		0BFBDDBF2AC32E41006E74FC /* ObjectList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObjectList.swift; sourceTree = "<group>"; };
+		0BFBDDC12AC33576006E74FC /* ImageLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageLoader.swift; sourceTree = "<group>"; };
+		0BFBDDC32AC3380C006E74FC /* ImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,12 +82,13 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0BD9F7852ABF348D0068F3A2 /* FirebaseDatabaseSwift in Frameworks */,
-				0BD9F7832ABF348D0068F3A2 /* FirebaseDatabase in Frameworks */,
+				0BFBDDBC2AC32D75006E74FC /* FirebaseDatabaseSwift in Frameworks */,
+				0BFBDDBA2AC32D75006E74FC /* FirebaseDatabase in Frameworks */,
 				0B57A8902ABDE31700D72FA0 /* OneSignalInAppMessages in Frameworks */,
 				0B57A88E2ABDE31700D72FA0 /* OneSignalFramework in Frameworks */,
 				0B57A8922ABDE31700D72FA0 /* OneSignalLocation in Frameworks */,
 				0B57A88C2ABDE31700D72FA0 /* OneSignalExtension in Frameworks */,
+				0BFBDDBE2AC32D75006E74FC /* FirebaseFirestore in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -124,6 +132,9 @@
 				0BFBDDB62AC32656006E74FC /* ObjectListView.swift */,
 				0BD9F7862ABF3D530068F3A2 /* CameraView.swift */,
 				0B10E4302ABE538B007DE28B /* ViewModel.swift */,
+				0BFBDDC32AC3380C006E74FC /* ImageView.swift */,
+				0BFBDDC12AC33576006E74FC /* ImageLoader.swift */,
+				0BFBDDBF2AC32E41006E74FC /* ObjectList.swift */,
 				0B843DE22ABBA7D5002CA641 /* Assets.xcassets */,
 				0B10E42B2ABE4F17007DE28B /* GoogleService-Info.plist */,
 				0B843DE42ABBA7D5002CA641 /* Preview Content */,
@@ -171,8 +182,9 @@
 				0B57A88D2ABDE31700D72FA0 /* OneSignalFramework */,
 				0B57A88F2ABDE31700D72FA0 /* OneSignalInAppMessages */,
 				0B57A8912ABDE31700D72FA0 /* OneSignalLocation */,
-				0BD9F7822ABF348D0068F3A2 /* FirebaseDatabase */,
-				0BD9F7842ABF348D0068F3A2 /* FirebaseDatabaseSwift */,
+				0BFBDDB92AC32D75006E74FC /* FirebaseDatabase */,
+				0BFBDDBB2AC32D75006E74FC /* FirebaseDatabaseSwift */,
+				0BFBDDBD2AC32D75006E74FC /* FirebaseFirestore */,
 			);
 			productName = SMR;
 			productReference = 0B843DDB2ABBA7D4002CA641 /* SMR.app */;
@@ -224,7 +236,7 @@
 			mainGroup = 0B843DD22ABBA7D4002CA641;
 			packageReferences = (
 				0B57A88A2ABDE31700D72FA0 /* XCRemoteSwiftPackageReference "OneSignal-XCFramework" */,
-				0BD9F7812ABF348D0068F3A2 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+				0BFBDDB82AC32D75006E74FC /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
 			);
 			productRefGroup = 0B843DDC2ABBA7D4002CA641 /* Products */;
 			projectDirPath = "";
@@ -261,12 +273,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0BFBDDC42AC3380C006E74FC /* ImageView.swift in Sources */,
 				0B10E4312ABE538B007DE28B /* ViewModel.swift in Sources */,
 				0B843DE12ABBA7D4002CA641 /* ContentView.swift in Sources */,
 				0B843DEF2ABBB444002CA641 /* HomeView.swift in Sources */,
 				0BD9F7872ABF3D530068F3A2 /* CameraView.swift in Sources */,
 				0B843DDF2ABBA7D4002CA641 /* SMRApp.swift in Sources */,
+				0BFBDDC22AC33576006E74FC /* ImageLoader.swift in Sources */,
 				0BFBDDB72AC32656006E74FC /* ObjectListView.swift in Sources */,
+				0BFBDDC02AC32E41006E74FC /* ObjectList.swift in Sources */,
 				0B843DED2ABBA8D7002CA641 /* GetStartView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -559,7 +574,7 @@
 				minimumVersion = 5.0.0;
 			};
 		};
-		0BD9F7812ABF348D0068F3A2 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+		0BFBDDB82AC32D75006E74FC /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
 			requirement = {
@@ -590,15 +605,20 @@
 			package = 0B57A88A2ABDE31700D72FA0 /* XCRemoteSwiftPackageReference "OneSignal-XCFramework" */;
 			productName = OneSignalLocation;
 		};
-		0BD9F7822ABF348D0068F3A2 /* FirebaseDatabase */ = {
+		0BFBDDB92AC32D75006E74FC /* FirebaseDatabase */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 0BD9F7812ABF348D0068F3A2 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			package = 0BFBDDB82AC32D75006E74FC /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
 			productName = FirebaseDatabase;
 		};
-		0BD9F7842ABF348D0068F3A2 /* FirebaseDatabaseSwift */ = {
+		0BFBDDBB2AC32D75006E74FC /* FirebaseDatabaseSwift */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 0BD9F7812ABF348D0068F3A2 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			package = 0BFBDDB82AC32D75006E74FC /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
 			productName = FirebaseDatabaseSwift;
+		};
+		0BFBDDBD2AC32D75006E74FC /* FirebaseFirestore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 0BFBDDB82AC32D75006E74FC /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestore;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

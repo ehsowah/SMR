@@ -7,9 +7,11 @@
 
 import Foundation
 import Firebase
+import FirebaseFirestore
 
 class ViewModel: ObservableObject {
     @Published var value: String? = nil
+    @Published var objectList = [ObjectList]()
     
     var ref = Database.database().reference()
     
@@ -21,5 +23,29 @@ class ViewModel: ObservableObject {
     
     func setData(_ turn: String) {
         ref.child("Turn").setValue(turn)
+    }
+    
+    func getDetectedObject() {
+        let db = Firestore.firestore()
+        
+        db.collection("DetectedObjects").getDocuments { snapshot, error in
+            
+            if error == nil {
+                
+                if let snapshot = snapshot {
+                    DispatchQueue.main.async {
+                        self.objectList = snapshot.documents.map({ d in
+                            return ObjectList(id: d.documentID,
+                                              imageURL: d["imageURL"] as? String ?? "",
+                                              name: d["name"] as? String ?? "",
+                                              confidence: d["confidence"] as? Int ?? 0,
+                                              date: d["date"] as? String ?? "",
+                                              danger: d["danger"] as? Bool ?? false)
+                        })
+                    }
+                }
+            }
+        }
+        
     }
 }

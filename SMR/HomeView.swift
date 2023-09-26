@@ -67,7 +67,7 @@ struct HomeView: View {
                         .cornerRadius(25)
                 }
                 
-                NavigationLink(destination: Text("Detected Obj")) {
+                NavigationLink(destination: ObjectListView()) {
                     Text("Detected Obj")
                         .foregroundColor(.white)
                         .frame(width: 150)

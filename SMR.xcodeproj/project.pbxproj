@@ -22,7 +22,34 @@
 		0BD9F7832ABF348D0068F3A2 /* FirebaseDatabase in Frameworks */ = {isa = PBXBuildFile; productRef = 0BD9F7822ABF348D0068F3A2 /* FirebaseDatabase */; };
 		0BD9F7852ABF348D0068F3A2 /* FirebaseDatabaseSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 0BD9F7842ABF348D0068F3A2 /* FirebaseDatabaseSwift */; };
 		0BD9F7872ABF3D530068F3A2 /* CameraView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BD9F7862ABF3D530068F3A2 /* CameraView.swift */; };
+		0BF55E792AC3145F000F3126 /* NotificationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BF55E782AC3145F000F3126 /* NotificationService.swift */; };
+		0BF55E7D2AC3145F000F3126 /* OneSignalNotificationServiceExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 0BF55E762AC3145F000F3126 /* OneSignalNotificationServiceExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		0BFBDDB72AC32656006E74FC /* ObjectListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BFBDDB62AC32656006E74FC /* ObjectListView.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		0BF55E7B2AC3145F000F3126 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0B843DD32ABBA7D4002CA641 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0BF55E752AC3145F000F3126;
+			remoteInfo = OneSignalNotificationServiceExtension;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		0BF55E7E2AC3145F000F3126 /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				0BF55E7D2AC3145F000F3126 /* OneSignalNotificationServiceExtension.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		0B10E42B2ABE4F17007DE28B /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
@@ -37,6 +64,10 @@
 		0B843DEC2ABBA8D7002CA641 /* GetStartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetStartView.swift; sourceTree = "<group>"; };
 		0B843DEE2ABBB444002CA641 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		0BD9F7862ABF3D530068F3A2 /* CameraView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraView.swift; sourceTree = "<group>"; };
+		0BF55E762AC3145F000F3126 /* OneSignalNotificationServiceExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = OneSignalNotificationServiceExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		0BF55E782AC3145F000F3126 /* NotificationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationService.swift; sourceTree = "<group>"; };
+		0BF55E7A2AC3145F000F3126 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0BFBDDB62AC32656006E74FC /* ObjectListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObjectListView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +84,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		0BF55E732AC3145F000F3126 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -60,6 +98,7 @@
 			isa = PBXGroup;
 			children = (
 				0B843DDD2ABBA7D4002CA641 /* SMR */,
+				0BF55E772AC3145F000F3126 /* OneSignalNotificationServiceExtension */,
 				0B843DDC2ABBA7D4002CA641 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -68,6 +107,7 @@
 			isa = PBXGroup;
 			children = (
 				0B843DDB2ABBA7D4002CA641 /* SMR.app */,
+				0BF55E762AC3145F000F3126 /* OneSignalNotificationServiceExtension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -81,6 +121,7 @@
 				0B843DE02ABBA7D4002CA641 /* ContentView.swift */,
 				0B843DEC2ABBA8D7002CA641 /* GetStartView.swift */,
 				0B843DEE2ABBB444002CA641 /* HomeView.swift */,
+				0BFBDDB62AC32656006E74FC /* ObjectListView.swift */,
 				0BD9F7862ABF3D530068F3A2 /* CameraView.swift */,
 				0B10E4302ABE538B007DE28B /* ViewModel.swift */,
 				0B843DE22ABBA7D5002CA641 /* Assets.xcassets */,
@@ -98,6 +139,15 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		0BF55E772AC3145F000F3126 /* OneSignalNotificationServiceExtension */ = {
+			isa = PBXGroup;
+			children = (
+				0BF55E782AC3145F000F3126 /* NotificationService.swift */,
+				0BF55E7A2AC3145F000F3126 /* Info.plist */,
+			);
+			path = OneSignalNotificationServiceExtension;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -108,10 +158,12 @@
 				0B843DD72ABBA7D4002CA641 /* Sources */,
 				0B843DD82ABBA7D4002CA641 /* Frameworks */,
 				0B843DD92ABBA7D4002CA641 /* Resources */,
+				0BF55E7E2AC3145F000F3126 /* Embed Foundation Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				0BF55E7C2AC3145F000F3126 /* PBXTargetDependency */,
 			);
 			name = SMR;
 			packageProductDependencies = (
@@ -126,6 +178,23 @@
 			productReference = 0B843DDB2ABBA7D4002CA641 /* SMR.app */;
 			productType = "com.apple.product-type.application";
 		};
+		0BF55E752AC3145F000F3126 /* OneSignalNotificationServiceExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0BF55E812AC3145F000F3126 /* Build configuration list for PBXNativeTarget "OneSignalNotificationServiceExtension" */;
+			buildPhases = (
+				0BF55E722AC3145F000F3126 /* Sources */,
+				0BF55E732AC3145F000F3126 /* Frameworks */,
+				0BF55E742AC3145F000F3126 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = OneSignalNotificationServiceExtension;
+			productName = OneSignalNotificationServiceExtension;
+			productReference = 0BF55E762AC3145F000F3126 /* OneSignalNotificationServiceExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -137,6 +206,9 @@
 				LastUpgradeCheck = 1430;
 				TargetAttributes = {
 					0B843DDA2ABBA7D4002CA641 = {
+						CreatedOnToolsVersion = 14.3;
+					};
+					0BF55E752AC3145F000F3126 = {
 						CreatedOnToolsVersion = 14.3;
 					};
 				};
@@ -159,6 +231,7 @@
 			projectRoot = "";
 			targets = (
 				0B843DDA2ABBA7D4002CA641 /* SMR */,
+				0BF55E752AC3145F000F3126 /* OneSignalNotificationServiceExtension */,
 			);
 		};
 /* End PBXProject section */
@@ -174,6 +247,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		0BF55E742AC3145F000F3126 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -186,11 +266,28 @@
 				0B843DEF2ABBB444002CA641 /* HomeView.swift in Sources */,
 				0BD9F7872ABF3D530068F3A2 /* CameraView.swift in Sources */,
 				0B843DDF2ABBA7D4002CA641 /* SMRApp.swift in Sources */,
+				0BFBDDB72AC32656006E74FC /* ObjectListView.swift in Sources */,
 				0B843DED2ABBA8D7002CA641 /* GetStartView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		0BF55E722AC3145F000F3126 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0BF55E792AC3145F000F3126 /* NotificationService.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		0BF55E7C2AC3145F000F3126 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0BF55E752AC3145F000F3126 /* OneSignalNotificationServiceExtension */;
+			targetProxy = 0BF55E7B2AC3145F000F3126 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		0B843DE72ABBA7D5002CA641 /* Debug */ = {
@@ -310,6 +407,7 @@
 		0B843DEA2ABBA7D5002CA641 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = SMR/SMR.entitlements;
@@ -341,6 +439,7 @@
 		0B843DEB2ABBA7D5002CA641 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = SMR/SMR.entitlements;
@@ -369,6 +468,56 @@
 			};
 			name = Release;
 		};
+		0BF55E7F2AC3145F000F3126 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = B5297G38R8;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = OneSignalNotificationServiceExtension/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = OneSignalNotificationServiceExtension;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ehwah.SMR.OneSignalNotificationServiceExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		0BF55E802AC3145F000F3126 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = B5297G38R8;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = OneSignalNotificationServiceExtension/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = OneSignalNotificationServiceExtension;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ehwah.SMR.OneSignalNotificationServiceExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -386,6 +535,15 @@
 			buildConfigurations = (
 				0B843DEA2ABBA7D5002CA641 /* Debug */,
 				0B843DEB2ABBA7D5002CA641 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0BF55E812AC3145F000F3126 /* Build configuration list for PBXNativeTarget "OneSignalNotificationServiceExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0BF55E7F2AC3145F000F3126 /* Debug */,
+				0BF55E802AC3145F000F3126 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

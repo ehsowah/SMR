@@ -8,8 +8,13 @@
 import SwiftUI
 
 struct ContentView: View {
+    @State private var isFirstTime = true
+    
     var body: some View {
-        HomeView()
+        HomeView(done: $isFirstTime)
+            .popover(isPresented: $isFirstTime) {
+                GetStartView(done: $isFirstTime)
+            }
     }
 }
 

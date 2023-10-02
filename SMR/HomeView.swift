@@ -9,10 +9,14 @@ import SwiftUI
 
 struct HomeView: View {
     
+    @Binding var done: Bool
+    
     var body: some View {
         NavigationView {
             VStack {
-                
+                Button("Instruction") {
+                    done = true
+                }
                 ZStack {
                     RoundedRectangle(cornerRadius: 25, style: .continuous)
                         .fill(.white)
@@ -82,8 +86,3 @@ struct HomeView: View {
     
 }
 
-struct HomeView_Previews: PreviewProvider {
-    static var previews: some View {
-        HomeView()
-    }
-}

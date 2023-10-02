@@ -12,6 +12,7 @@ struct GetStartView: View {
     @State private var isBegin = false
     @State private var step = 0
     @State private var stepDescription = "N/A"
+    @Binding var done: Bool
     
     var body: some View {
         VStack {
@@ -21,7 +22,7 @@ struct GetStartView: View {
             if !isBegin {
                 Text("SMR")
                     .font(.custom("Arial", size: 70))
-                    .foregroundColor(.orange)
+                    .foregroundColor(Color("robotBlue"))
                     .bold()
                 
                 Text("Security Monitoring Robot")
@@ -56,7 +57,7 @@ struct GetStartView: View {
                         .foregroundColor(.white)
                         .frame(width: 150)
                         .padding()
-                        .background(Color.orange)
+                        .background(Color("robotBlue"))
                         .cornerRadius(25)
                 }
                 Spacer()
@@ -79,7 +80,7 @@ struct GetStartView: View {
                         .foregroundColor(.white)
                         .frame(width: 150)
                         .padding()
-                        .background(Color.orange)
+                        .background(Color("robotBlue"))
                         .cornerRadius(25)
                 }
             }
@@ -97,13 +98,10 @@ struct GetStartView: View {
             stepDescription = "step 3 description"
         default:
             stepDescription = "N/A"
+            done = false
         }
     }
 }
 
-struct GetStartView_Previews: PreviewProvider {
-    static var previews: some View {
-        GetStartView()
-    }
-}
+
 

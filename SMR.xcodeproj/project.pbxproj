@@ -19,6 +19,7 @@
 		0B843DE62ABBA7D5002CA641 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0B843DE52ABBA7D5002CA641 /* Preview Assets.xcassets */; };
 		0B843DED2ABBA8D7002CA641 /* GetStartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B843DEC2ABBA8D7002CA641 /* GetStartView.swift */; };
 		0B843DEF2ABBB444002CA641 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B843DEE2ABBB444002CA641 /* HomeView.swift */; };
+		0BD087F82ACB59AB006CE1CF /* ObjectDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BD087F72ACB59AB006CE1CF /* ObjectDetailView.swift */; };
 		0BD9F7872ABF3D530068F3A2 /* CameraView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BD9F7862ABF3D530068F3A2 /* CameraView.swift */; };
 		0BF55E792AC3145F000F3126 /* NotificationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BF55E782AC3145F000F3126 /* NotificationService.swift */; };
 		0BF55E7D2AC3145F000F3126 /* OneSignalNotificationServiceExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 0BF55E762AC3145F000F3126 /* OneSignalNotificationServiceExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
@@ -67,6 +68,7 @@
 		0B843DE52ABBA7D5002CA641 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		0B843DEC2ABBA8D7002CA641 /* GetStartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetStartView.swift; sourceTree = "<group>"; };
 		0B843DEE2ABBB444002CA641 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		0BD087F72ACB59AB006CE1CF /* ObjectDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObjectDetailView.swift; sourceTree = "<group>"; };
 		0BD9F7862ABF3D530068F3A2 /* CameraView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraView.swift; sourceTree = "<group>"; };
 		0BF55E762AC3145F000F3126 /* OneSignalNotificationServiceExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = OneSignalNotificationServiceExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		0BF55E782AC3145F000F3126 /* NotificationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationService.swift; sourceTree = "<group>"; };
@@ -130,6 +132,7 @@
 				0B843DEC2ABBA8D7002CA641 /* GetStartView.swift */,
 				0B843DEE2ABBB444002CA641 /* HomeView.swift */,
 				0BFBDDB62AC32656006E74FC /* ObjectListView.swift */,
+				0BD087F72ACB59AB006CE1CF /* ObjectDetailView.swift */,
 				0BD9F7862ABF3D530068F3A2 /* CameraView.swift */,
 				0B10E4302ABE538B007DE28B /* ViewModel.swift */,
 				0BFBDDC32AC3380C006E74FC /* ImageView.swift */,
@@ -274,6 +277,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0BFBDDC42AC3380C006E74FC /* ImageView.swift in Sources */,
+				0BD087F82ACB59AB006CE1CF /* ObjectDetailView.swift in Sources */,
 				0B10E4312ABE538B007DE28B /* ViewModel.swift in Sources */,
 				0B843DE12ABBA7D4002CA641 /* ContentView.swift in Sources */,
 				0B843DEF2ABBB444002CA641 /* HomeView.swift in Sources */,

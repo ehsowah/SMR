@@ -6,16 +6,25 @@
 //
 
 import SwiftUI
+import WebKit
 
 struct CameraView: View {
     
     @ObservedObject var model = ViewModel()
     @State private var count = 0
+    var url: String
     
     var body: some View {
         VStack {
-            Rectangle()
-                .fill(.gray)
+            
+            if let url = URL(string: url) {
+                WebView(url: url)
+                    .ignoresSafeArea()
+                    .navigationTitle("Camera View")
+                    .navigationBarTitleDisplayMode(.inline)
+            }
+            
+            
             
             VStack {
                 Button {
@@ -70,8 +79,3 @@ struct CameraView: View {
     }
 }
 
-struct CameraView_Previews: PreviewProvider {
-    static var previews: some View {
-        CameraView()
-    }
-}

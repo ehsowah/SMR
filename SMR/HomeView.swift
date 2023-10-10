@@ -10,6 +10,7 @@ import SwiftUI
 struct HomeView: View {
     
     @Binding var done: Bool
+    @State  private var url = "http://192.168.1.97:8000/"
     
     var body: some View {
         NavigationView {
@@ -23,6 +24,8 @@ struct HomeView: View {
                         .shadow(color: .gray, radius: 40, x: 0, y: 10)
                     
                     VStack {
+                        TextField("enter url", text: $url)
+                        
                         HStack(spacing: 20) {
                             Image("logo")
                                 .resizable()
@@ -62,7 +65,7 @@ struct HomeView: View {
                 .frame(height: 250)
                 .padding()
                 
-                NavigationLink(destination: CameraView()) {
+                NavigationLink(destination: CameraView(url: url)) {
                     Text("Camera")
                         .foregroundColor(.white)
                         .frame(width: 150)

@@ -13,6 +13,7 @@
 		0B57A88E2ABDE31700D72FA0 /* OneSignalFramework in Frameworks */ = {isa = PBXBuildFile; productRef = 0B57A88D2ABDE31700D72FA0 /* OneSignalFramework */; };
 		0B57A8902ABDE31700D72FA0 /* OneSignalInAppMessages in Frameworks */ = {isa = PBXBuildFile; productRef = 0B57A88F2ABDE31700D72FA0 /* OneSignalInAppMessages */; };
 		0B57A8922ABDE31700D72FA0 /* OneSignalLocation in Frameworks */ = {isa = PBXBuildFile; productRef = 0B57A8912ABDE31700D72FA0 /* OneSignalLocation */; };
+		0B7815CD2ACDD480007AFDE6 /* WebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B7815CC2ACDD480007AFDE6 /* WebView.swift */; };
 		0B843DDF2ABBA7D4002CA641 /* SMRApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B843DDE2ABBA7D4002CA641 /* SMRApp.swift */; };
 		0B843DE12ABBA7D4002CA641 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B843DE02ABBA7D4002CA641 /* ContentView.swift */; };
 		0B843DE32ABBA7D5002CA641 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0B843DE22ABBA7D5002CA641 /* Assets.xcassets */; };
@@ -61,6 +62,7 @@
 		0B10E4302ABE538B007DE28B /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
 		0B57A8932ABDE34800D72FA0 /* SMR.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SMR.entitlements; sourceTree = "<group>"; };
 		0B57A8942ABDE35B00D72FA0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		0B7815CC2ACDD480007AFDE6 /* WebView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebView.swift; sourceTree = "<group>"; };
 		0B843DDB2ABBA7D4002CA641 /* SMR.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SMR.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0B843DDE2ABBA7D4002CA641 /* SMRApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SMRApp.swift; sourceTree = "<group>"; };
 		0B843DE02ABBA7D4002CA641 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -134,6 +136,7 @@
 				0BFBDDB62AC32656006E74FC /* ObjectListView.swift */,
 				0BD087F72ACB59AB006CE1CF /* ObjectDetailView.swift */,
 				0BD9F7862ABF3D530068F3A2 /* CameraView.swift */,
+				0B7815CC2ACDD480007AFDE6 /* WebView.swift */,
 				0B10E4302ABE538B007DE28B /* ViewModel.swift */,
 				0BFBDDC32AC3380C006E74FC /* ImageView.swift */,
 				0BFBDDC12AC33576006E74FC /* ImageLoader.swift */,
@@ -285,6 +288,7 @@
 				0B843DDF2ABBA7D4002CA641 /* SMRApp.swift in Sources */,
 				0BFBDDC22AC33576006E74FC /* ImageLoader.swift in Sources */,
 				0BFBDDB72AC32656006E74FC /* ObjectListView.swift in Sources */,
+				0B7815CD2ACDD480007AFDE6 /* WebView.swift in Sources */,
 				0BFBDDC02AC32E41006E74FC /* ObjectList.swift in Sources */,
 				0B843DED2ABBA8D7002CA641 /* GetStartView.swift in Sources */,
 			);

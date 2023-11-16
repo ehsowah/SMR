@@ -10,7 +10,7 @@ import SwiftUI
 struct HomeView: View {
     
     @Binding var done: Bool
-    @State  private var url = "http://192.168.1.97:8000/"
+    @State  private var url = "http://192.123.1.12:8080/"
     
     var body: some View {
         NavigationView {

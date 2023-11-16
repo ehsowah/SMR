@@ -44,7 +44,10 @@ class ViewModel: ObservableObject {
                         })
                     }
                 }
+            } else {
+                print(error?.localizedDescription)
             }
+            
         }
         
     }

@@ -63,7 +63,7 @@
 		0B57A8932ABDE34800D72FA0 /* SMR.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SMR.entitlements; sourceTree = "<group>"; };
 		0B57A8942ABDE35B00D72FA0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		0B7815CC2ACDD480007AFDE6 /* WebView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebView.swift; sourceTree = "<group>"; };
-		0B843DDB2ABBA7D4002CA641 /* SMR.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SMR.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		0B843DDB2ABBA7D4002CA641 /* SMR10.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SMR10.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0B843DDE2ABBA7D4002CA641 /* SMRApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SMRApp.swift; sourceTree = "<group>"; };
 		0B843DE02ABBA7D4002CA641 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		0B843DE22ABBA7D5002CA641 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -118,7 +118,7 @@
 		0B843DDC2ABBA7D4002CA641 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				0B843DDB2ABBA7D4002CA641 /* SMR.app */,
+				0B843DDB2ABBA7D4002CA641 /* SMR10.app */,
 				0BF55E762AC3145F000F3126 /* OneSignalNotificationServiceExtension.appex */,
 			);
 			name = Products;
@@ -168,9 +168,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		0B843DDA2ABBA7D4002CA641 /* SMR */ = {
+		0B843DDA2ABBA7D4002CA641 /* SMR10 */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 0B843DE92ABBA7D5002CA641 /* Build configuration list for PBXNativeTarget "SMR" */;
+			buildConfigurationList = 0B843DE92ABBA7D5002CA641 /* Build configuration list for PBXNativeTarget "SMR10" */;
 			buildPhases = (
 				0B843DD72ABBA7D4002CA641 /* Sources */,
 				0B843DD82ABBA7D4002CA641 /* Frameworks */,
@@ -182,7 +182,7 @@
 			dependencies = (
 				0BF55E7C2AC3145F000F3126 /* PBXTargetDependency */,
 			);
-			name = SMR;
+			name = SMR10;
 			packageProductDependencies = (
 				0B57A88B2ABDE31700D72FA0 /* OneSignalExtension */,
 				0B57A88D2ABDE31700D72FA0 /* OneSignalFramework */,
@@ -193,7 +193,7 @@
 				0BFBDDBD2AC32D75006E74FC /* FirebaseFirestore */,
 			);
 			productName = SMR;
-			productReference = 0B843DDB2ABBA7D4002CA641 /* SMR.app */;
+			productReference = 0B843DDB2ABBA7D4002CA641 /* SMR10.app */;
 			productType = "com.apple.product-type.application";
 		};
 		0BF55E752AC3145F000F3126 /* OneSignalNotificationServiceExtension */ = {
@@ -231,7 +231,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 0B843DD62ABBA7D4002CA641 /* Build configuration list for PBXProject "SMR" */;
+			buildConfigurationList = 0B843DD62ABBA7D4002CA641 /* Build configuration list for PBXProject "SMR10" */;
 			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -248,7 +248,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				0B843DDA2ABBA7D4002CA641 /* SMR */,
+				0B843DDA2ABBA7D4002CA641 /* SMR10 */,
 				0BF55E752AC3145F000F3126 /* OneSignalNotificationServiceExtension */,
 			);
 		};
@@ -544,7 +544,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		0B843DD62ABBA7D4002CA641 /* Build configuration list for PBXProject "SMR" */ = {
+		0B843DD62ABBA7D4002CA641 /* Build configuration list for PBXProject "SMR10" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				0B843DE72ABBA7D5002CA641 /* Debug */,
@@ -553,7 +553,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		0B843DE92ABBA7D5002CA641 /* Build configuration list for PBXNativeTarget "SMR" */ = {
+		0B843DE92ABBA7D5002CA641 /* Build configuration list for PBXNativeTarget "SMR10" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				0B843DEA2ABBA7D5002CA641 /* Debug */,

@@ -22,6 +22,7 @@ struct HomeView: View {
                     RoundedRectangle(cornerRadius: 25, style: .continuous)
                         .fill(.white)
                         .shadow(color: .gray, radius: 40, x: 0, y: 10)
+                        .frame(width: 500)
                     
                     VStack {
                         TextField("enter url", text: $url)
@@ -59,6 +60,7 @@ struct HomeView: View {
                         
                         
                     }
+                    .frame(width: 400)
                     .padding(30)
                     .cornerRadius(20)
                 }
@@ -83,7 +85,8 @@ struct HomeView: View {
                         .cornerRadius(25)
                 }
             }
-        }
+            
+        }.navigationViewStyle(StackNavigationViewStyle())
     }
     
     

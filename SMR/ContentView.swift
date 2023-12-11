@@ -11,10 +11,10 @@ struct ContentView: View {
     @State private var isFirstTime = true
     
     var body: some View {
-        HomeView(done: $isFirstTime)
-            .popover(isPresented: $isFirstTime) {
-                GetStartView(done: $isFirstTime)
-            }
+        HomeView()
+//            .popover(isPresented: $isFirstTime) {
+//                GetStartView(done: $isFirstTime)
+//            }
     }
 }
 

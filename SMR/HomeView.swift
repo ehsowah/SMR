@@ -9,15 +9,15 @@ import SwiftUI
 
 struct HomeView: View {
     
-    @Binding var done: Bool
-    @State  private var url = "http://192.123.1.12:8080/"
+//    @Binding var done: Bool
+    @State  private var url = "http://10.34.161.35:8000/"
     
     var body: some View {
         NavigationView {
             VStack {
-                Button("Instruction") {
-                    done = true
-                }
+//                Button("Instruction") {
+//                    done = true
+//                }
                 ZStack {
                     RoundedRectangle(cornerRadius: 25, style: .continuous)
                         .fill(.white)
@@ -76,14 +76,14 @@ struct HomeView: View {
                         .cornerRadius(25)
                 }
                 
-                NavigationLink(destination: ObjectListView()) {
-                    Text("Detected Obj")
-                        .foregroundColor(.white)
-                        .frame(width: 150)
-                        .padding()
-                        .background(Color("robotBlue"))
-                        .cornerRadius(25)
-                }
+//                NavigationLink(destination: ObjectListView()) {
+//                    Text("Detected Obj")
+//                        .foregroundColor(.white)
+//                        .frame(width: 150)
+//                        .padding()
+//                        .background(Color("robotBlue"))
+//                        .cornerRadius(25)
+//                }
             }
             
         }.navigationViewStyle(StackNavigationViewStyle())
